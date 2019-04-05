@@ -158,7 +158,8 @@ a {
 }
 
 /* 숨김 컨텐츠 */
-.readable-hidden {
+.readable-hidden,
+legend {
     background: red; /*테스트하기 위해*/
     position: absolute;
     width: 1px;
@@ -170,11 +171,11 @@ a {
 
 /* 플로트 이슈를 해결하기 위한 CSS 모듈 */
 /* 메인에 class값으로 clearfix를 넣었음 */
-/* .clearfix::after {
+.clearfix::after {
     content: "";
     display: block;
     clear: both;
-} */
+}
 
 /* .container {
     background: silver;
@@ -372,15 +373,15 @@ a {
 }
 
 .main {
-    background: lime;
-    height: 60vh;
+    border-radius: 15px 15px 0 0;
+    background: #fff;
     display: flex;
+    min-height: 450px;
     padding: 30px;
     justify-content: space-between;
 }
 
 .group1 {
-    background: skyblue;
     width: 250px;
 }
 
@@ -394,11 +395,225 @@ a {
     width: 190px;
 }
 
+/* 로그인 */
+/* 강사님 코드 */
+.login {
+    /* position: absolute; */
+    border-radius: 5px;
+    padding: 10px;
+    /* height: 165px;
+    width: 250px; */
+    box-shadow: 5px 5px 0 #aaa;
+    background: #e28832;
+    background: radial-gradient(
+        circle at 100% 0%,
+        #e28832 0%,
+        #ea5d2d 50%,
+        #ec592d 100%
+    );
+}
+
+.login-heading {
+    color: #ff0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-indent: 1em;
+}
+
+.login-form {
+    background: #fff;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px 0px 10px;
+    margin-top: 10px;
+}
+
+.login-form fieldset {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+.user-pw {
+    margin-top: 6px;
+}
+
+.login-form label {
+    display: inline-block;
+    width: 4em;
+}
+
+.login-form input {
+    width: 90px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 5px;
+}
+
+.btn-login {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    right: 0px;
+    border: 0px;
+    padding: 2px;
+    color: #fff;
+    background: #ea5d2d;
+    font-size: 1.3rem;
+    border-radius: 3px;
+}
+
+.sign {
+    background: #fff;
+    border-radius: 0 0 5px 5px;
+    padding: 8px 10px;
+}
+
+.sign li {
+    letter-spacing: -1px;
+}
+
+.sign li:first-child {
+    float: left;
+}
+
+.sign li:last-child {
+    float: right;
+}
+
+.sign li::before {
+    color: orange;
+}
+
+/* 내코드 */
+/* .login {
+    position: absolute;
+    border-radius: 10px;
+    height: 165px;
+    width: 250px;
+    box-shadow: 5px 5px 0 gray;
+    background: #e28832;
+    background: -moz-radial-gradient(
+        at 100% 0%,
+        #e28832 0%,
+        #ea5d2d 50%,
+        #ec592d 100%
+    );
+    background: -webkit-radial-gradient(
+        at 100% 0%,
+        #e28832 0%,
+        #ea5d2d 50%,
+        #ec592d 100%
+    );
+    background: radial-gradient(
+        at 100% 0%,
+        #e28832 0%,
+        #ea5d2d 50%,
+        #ec592d 100%
+    );
+}
+
+.login-heading {
+    font-size: 16px;
+    padding: 7px 0;
+    color: yellow;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+form {
+    position: absolute;
+    left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: white;
+    width: 230px;
+    height: 110px;
+}
+
+#user-email,
+#user-pw {
+    width: 100px;
+}
+
+label {
+    margin-top: 7px;
+    display: inline-block;
+    width: 55px;
+}
+
+.btn-login {
+    border-radius: 5px;
+    position: absolute;
+    left: 170px;
+    top: 9px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 12px;
+    background-color: #eb562c;
+}
+
+.sign {
+    border-top: 1px solid #aaa;
+    position: relative;
+    top: 70px;
+    left: 5px;
+    font-size: 12px;
+    padding-top: 5px;
+    margin-left: 10px;
+    width: 210px;
+}
+
+.icon-right-open {
+    margin-left: 5px;
+    display: inline-block;
+} */
+
+/* 강사님 코드 */
+.validation-list {
+    margin-top: 25px;
+}
+
+.validation-list a {
+    display: block;
+    border: 1px solid #aaa;
+    background: url("images/validation_icon.png") no-repeat 20px 50%,
+        linear-gradient(to bottom, #ccc 0%, #eee 100%);
+    border-radius: 30px;
+    height: 30px;
+    line-height: 28px;
+    padding-left: 45px;
+    margin-top: 10px;
+}
+
+/* 내코드 */
+/* .validation-list li:first-child {
+    margin-top: 15px;
+}
+
+.validation-list li:last-child {
+    margin-top: 10px;
+}
+
+.validation-list li a {
+    display: block;
+    background: url("images/validation_icon.png"),
+        linear-gradient(to bottom, #ccc 0%, #eee 100%);
+    background-repeat: no-repeat;
+    background-position: 5%, 50%;
+    padding: 5px 40px;
+    border-radius: 50px;
+    border: 1px solid #aaa;
+} */
+
+/* 슬로건 */
 .slogan {
     background: tomato;
     height: 10vh;
 }
 
+/* 푸터 */
 .footer-bg {
     background: purple;
 }
