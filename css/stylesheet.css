@@ -493,18 +493,6 @@ legend {
     width: 250px;
     box-shadow: 5px 5px 0 gray;
     background: #e28832;
-    background: -moz-radial-gradient(
-        at 100% 0%,
-        #e28832 0%,
-        #ea5d2d 50%,
-        #ec592d 100%
-    );
-    background: -webkit-radial-gradient(
-        at 100% 0%,
-        #e28832 0%,
-        #ea5d2d 50%,
-        #ec592d 100%
-    );
     background: radial-gradient(
         at 100% 0%,
         #e28832 0%,
