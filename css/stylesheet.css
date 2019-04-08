@@ -386,7 +386,6 @@ legend {
 }
 
 .group2 {
-    background: pink;
     width: 380px;
 }
 
@@ -635,6 +634,40 @@ label {
     margin-top: 5px;
     float: right;
     width: 145px;
+}
+
+/* 그룹2 */
+.search {
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    padding: 15px 25px 10px;
+    background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 100%);
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-form input {
+    width: 195px;
+    height: 24px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 1px 1px 1px 5px;
+}
+
+.search-form button {
+    font-size: 12px;
+    padding: 1px 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    color: #fff;
+    background: #333;
+    height: 24px;
 }
 
 /* 슬로건 */

@@ -4,6 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>웹카페(Web Cafe)</title>
+        <link rel="icon" href="images/common/webcafe.png" type="image/png" />
         <link
             rel="stylesheet"
             type="text/css"
@@ -172,13 +173,13 @@
                 </nav>
             </header>
             <div class="visual">
-                <p class="visual-text">Web Standard &amp Accessibility</p>
+                <p class="visual-text">Web Standard &amp; Accessibility</p>
             </div>
             <main class="main clearfix">
                 <div class="group group1">
                     <section class="login">
                         <h2 class="login-heading">로그인</h2>
-                        <form action="" method="GET" class="login-form">
+                        <form action="" class="login-form">
                             <fieldset>
                                 <legend>회원 로그인 폼</legend>
                                 <div class="user-email">
@@ -219,7 +220,7 @@
                             <li>
                                 <a
                                     href="#"
-                                    targer="_blank"
+                                    target="_blank"
                                     title="마크업 유효성 검사 배너 링크(새창)"
                                     >W3C Markup Validation</a
                                 >
@@ -227,7 +228,7 @@
                             <li>
                                 <a
                                     href="#"
-                                    targer="_blank"
+                                    target="_blank"
                                     title="CSS 유효성 검사 배너 링크(새창)"
                                     >CSS validation Service</a
                                 >
@@ -255,7 +256,31 @@
                         </dl>
                     </section>
                 </div>
-                <div class="group group2">group2</div>
+                <div class="group group2">
+                    <section class="search">
+                        <h2 class="readable-hidden">검색</h2>
+                        <form action="" class="search-form">
+                            <fieldset>
+                                <legend>검색 폼</legend>
+                                <div class="search-container">
+                                    <label for="search" class="icon-search"
+                                        >자료검색</label
+                                    >
+                                    <input
+                                        type="search"
+                                        name="search"
+                                        id="search"
+                                        required
+                                        placeholder="검색어를 입력하세요."
+                                    />
+                                    <button type="submit">
+                                        검색
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </section>
+                </div>
                 <div class="group group3">group3</div>
             </main>
             <article class="slogan">슬로건</article>
