@@ -246,6 +246,7 @@ legend {
 .menu-item {
     float: left;
     position: relative;
+    cursor: pointer;
 }
 
 .menu-item-text {
@@ -668,6 +669,85 @@ label {
     color: #fff;
     background: #333;
     height: 24px;
+}
+
+/* 공지사항 및 자료실 */
+.board {
+    margin-top: 20px;
+    position: relative;
+}
+
+.tab {
+    position: absolute;
+    top: 0;
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px;
+    background: #ccc linear-gradient(to bottom, #ccc 0%, #eee 100%);
+    color: #333;
+    cursor: pointer;
+}
+
+.notice-heading {
+    left: 0;
+}
+
+.pds-heading {
+    left: 73px;
+}
+
+.board-act .tab {
+    border-color: #e25d2d #e25d2d #fff #e25d2d;
+    background: #fff;
+    color: #e25d2d;
+    border-radius: 5px 5px 0 0;
+}
+
+.board-list li {
+    margin-bottom: 5px;
+}
+
+.board-list a {
+    display: inline-block;
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.board-list li::before {
+    position: relative;
+    top: -5px;
+}
+
+.board-list time {
+    float: right;
+}
+
+.board-list {
+    top: 45px;
+    padding-top: 45px;
+}
+
+.board-list,
+.board-more {
+    display: none;
+}
+
+.board-act .board-list,
+.board-act .board-more {
+    display: block;
+}
+
+.board-more {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+}
+
+.board-more::before {
+    color: hsla(110, 90%, 30%, 1);
 }
 
 /* 슬로건 */
