@@ -391,7 +391,6 @@ legend {
 }
 
 .group3 {
-    background: teal;
     width: 190px;
 }
 
@@ -748,6 +747,133 @@ label {
 
 .board-more::before {
     color: hsla(110, 90%, 30%, 1);
+}
+
+/* 새소식 */
+.news {
+    margin-top: 20px;
+    min-height: 100px;
+    position: relative;
+}
+
+.news::before {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: 0;
+    width: 80%;
+    height: 1px;
+    background: #aaa linear-gradient(to right, #aaa 0%, #fff 100%);
+}
+
+.news-heading {
+    color: #e25d2d;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.news-item {
+    margin-top: 35px;
+    position: relative;
+}
+
+.news-item > a {
+    display: block;
+    padding-left: 130px;
+}
+
+.news-item-subject {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.news-item-date {
+}
+
+.news-item-brief {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.news-item-thumbnail {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    text-align: center;
+}
+
+.news-item-thumbnail img {
+    margin-bottom: 15px;
+    box-shadow: 0 10px 15px 5px #aaa;
+}
+
+.news-more {
+    position: absolute;
+    padding: 8px;
+    top: -8px;
+    right: -8px;
+}
+
+.news-more::before {
+    color: hsla(110, 90%, 30%, 1);
+}
+
+/* 신규 이벤트 및 관련 사이트 */
+.event-related {
+    background: #ccc linear-gradient(#ccc, #eee);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.event {
+    position: relative;
+}
+
+.event-heading {
+    font-display: 1.5rem;
+    font-weight: bold;
+}
+
+.event-heading span {
+    color: #e25d2d;
+}
+
+.event p {
+    margin: 10px 0;
+}
+
+.event-thumbnail {
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px #999;
+    margin-bottom: 15px;
+}
+
+.btn-event {
+    padding: 2px; /* 탭 접근 했을때 아웃라인이 오버플로어 히든으로 가려지는것을 방지 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 18px; /*하이트와 버플로우를 여기 쓴 이유는 크로스 브라우징을 위해 버튼이 각 브러우저마다 해석이 다름 */
+    overflow: hidden;
+}
+
+.btn-event-prev,
+.btn-event-next {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    border: 0;
+    padding-top: 18px;
+    background: url("images/back_forward.png") no-repeat;
+}
+
+.btn-event-next {
+    background-position: -37px 0;
+}
+
+.related {
+    background: skyblue;
 }
 
 /* 슬로건 */
