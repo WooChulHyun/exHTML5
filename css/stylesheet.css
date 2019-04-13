@@ -115,7 +115,7 @@ ul {
     list-style: none;
 }
 blockquote,
-q {
+/* q {
     quotes: none;
 }
 blockquote:before,
@@ -124,7 +124,7 @@ q:before,
 q:after {
     content: "";
     content: none;
-}
+} */
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -272,7 +272,6 @@ legend {
 }
 
 .sub-menu {
-    background: aqua;
     position: absolute;
     top: 47px;
     white-space: nowrap;
@@ -873,13 +872,162 @@ label {
 }
 
 .related {
-    background: skyblue;
+    padding-top: 10px;
+    border-top: 1px solid #aaa;
+}
+
+.related h2 {
+    font-display: 1.5rem;
+    font-weight: bold;
+}
+
+.related h2 span {
+    color: #e25d2d;
+}
+
+.related-list {
+    margin-top: 10px;
+    background: white;
+    border: 1px solid #aaa;
+    height: 27px;
+    overflow: hidden;
+    transition: all 0.4s;
+    border-radius: 5px;
+}
+
+.list-act {
+    height: 145px;
+    padding: 10px 0;
+}
+
+.related-list:hover {
+    height: 145px;
+    padding: 10px 0;
+}
+
+.related-list a {
+    display: block;
+    line-height: 25px;
+    width: 100%;
+    text-indent: 2em;
+}
+
+/* 인기 사이트 */
+.favorite {
+    position: relative;
+    background: #ccc linear-gradient(#ccc, #eee);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 10px 5px 10px;
+}
+
+.favorite h2 {
+    font-display: 1.5rem;
+    font-weight: bold;
+}
+
+.favorite h2 span {
+    color: #e25d2d;
+}
+
+.favorite-list {
+    margin-top: 5px;
+    overflow: hidden;
+    counter-reset: 0;
+}
+
+.favorite-list li {
+    counter-increment: number;
+    margin: 5px 0;
+    position: relative;
+}
+
+.favorite-list li::before {
+    content: counter(number);
+    background: #aaa;
+    color: #fff;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0 5px;
+    border-radius: 2px;
+    margin-right: 5px;
+}
+
+.up,
+.stop,
+.down {
+    position: absolute;
+    width: 9px;
+    height: 11px;
+    overflow: hidden;
+    right: 0;
+    top: 50%;
+    padding-top: 11px;
+    margin-top: -5px;
+    background: url("images/rank.png") no-repeat;
+}
+
+.favorite ol li .up {
+    background-position: 0 0;
+}
+
+.favorite ol li .stop {
+    background-position: 0 50%;
+}
+
+.favorite ol li .down {
+    background-position: 0 100%;
+}
+
+.favorite-more {
+    position: absolute;
+    padding: 8px;
+    top: 2px;
+    right: 2px;
+}
+
+.favorite-more::before {
+    color: hsla(110, 90%, 30%, 1);
 }
 
 /* 슬로건 */
 .slogan {
-    background: tomato;
-    height: 10vh;
+    background: #fff;
+    position: relative;
+    padding: 10px 70px 10px 180px;
+}
+
+.slogan-heading {
+    position: absolute;
+    left: 35px;
+    bottom: -35px;
+    height: 83px;
+    width: 110px;
+    text-align: center;
+    line-height: 83px;
+    display: inline-block;
+}
+
+.slogan-heading::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("images/coffee.png") no-repeat;
+}
+
+.slogan-content {
+    /* padding: 10px 70px 10px 180px; */
+    color: #a09784;
+}
+
+.slogan-content q::before {
+    font-size: 30px;
+    position: relative;
+    top: 5px;
 }
 
 /* 푸터 */

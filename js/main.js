@@ -18,3 +18,12 @@ tab.on("click keyup", function(e) {
             .addClass("board-act");
     }
 });
+
+// 관련 사이트 목록 제어를 위한 스크립트
+$(".related-list")
+    .on("focusin", function() {
+        $(".related-list").addClass("list-act");
+    })
+    .on("focusout", function() {
+        $(".related-list").removeClass("list-act");
+    });
