@@ -146,7 +146,7 @@ body {
     font-weight: 400;
     /* 아래의 백그라운드에 리니어 그라디언트 앞 색은 배경이 안먹힐떄 나타나게 하는 색 */
     background: url("images/bg_flower.png") no-repeat,
-        #aaa linear-gradient(#aaa 0%, #ccc 40%, #eee 70%, #fff 100%);
+        linear-gradient(to bottom, #ccc, #eee 45%, #fff 70%, #fff 100%) repeat;
     background-position: 50% 0%;
     color: #181818;
 }
@@ -1032,10 +1032,8 @@ label {
 
 /* 푸터 */
 .footer-bg {
-    background: purple;
+    background: #ccc linear-gradient(#ccc, #eee);
 }
 
 .footer {
-    background: yellow;
-    height: 10vh;
 }
