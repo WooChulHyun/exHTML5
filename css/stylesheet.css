@@ -146,7 +146,7 @@ body {
     font-weight: 400;
     /* 아래의 백그라운드에 리니어 그라디언트 앞 색은 배경이 안먹힐떄 나타나게 하는 색 */
     background: url("images/bg_flower.png") no-repeat,
-        linear-gradient(to bottom, #ccc, #eee 45%, #fff 70%, #fff 100%) repeat;
+        linear-gradient(to bottom, #ccc, #eee 45%, #fff 70%, #fff 100%);
     background-position: 50% 0%;
     color: #181818;
 }
@@ -1032,8 +1032,52 @@ label {
 
 /* 푸터 */
 .footer-bg {
-    background: #ccc linear-gradient(#ccc, #eee);
+    background: #aaa
+        linear-gradient(to bottom, #ccc, #eee 45%, #fff 70%, #fff 100%);
 }
 
 .footer {
+    position: relative;
+    padding: 15px 100px 15px 180px;
+}
+
+.footer-logo {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+}
+
+.guide {
+    background: #7b8385;
+    color: #fff;
+    border-radius: 10px;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.guide li,
+.guide a {
+    display: inline-block;
+}
+
+.guide a {
+    padding: 8px 10px;
+    text-transform: uppercase;
+}
+
+.address {
+    margin-top: 10px;
+}
+
+.address span {
+    margin-right: 15px;
+}
+
+.copyright {
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 0;
 }
