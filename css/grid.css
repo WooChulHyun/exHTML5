@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@media all and (max-width: 999px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "book book news news"
+            "board board favorite favorite"
+            "twitter twitter twitter twitter"
+            "footer footer footer footer";
+    }
+
+    .header {
+        background: yellow;
+        grid-area: header;
+    }
+
+    .navigation {
+        background: pink;
+        grid-area: nav;
+    }
+
+    .book {
+        background: orange;
+        grid-area: book;
+    }
+
+    .news {
+        background: lime;
+        grid-area: news;
+    }
+
+    .board {
+        background: brown;
+        grid-area: board;
+    }
+
+    .favorite {
+        background: teal;
+        grid-area: favorite;
+    }
+
+    .twitter {
+        background: skyblue;
+        grid-area: twitter;
+    }
+
+    .footer {
+        background: hotpink;
+        grid-area: footer;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: silver;
+        display: grid;
+        grid-template-columns: repeat(12, 65px);
+        /* grid-template-rows: 100px 100px; */
+        grid-column-gap: 20px;
+    }
+
+    .header {
+        background: yellow;
+        grid-area: 1/1/2/13;
+    }
+
+    .navigation {
+        background: pink;
+        grid-area: 2/1/3/13;
+    }
+
+    .book {
+        background: lime;
+        grid-area: 3/1/4/5;
+    }
+
+    .news {
+        background: orange;
+        grid-area: 3/5/4/13;
+    }
+
+    .board {
+        background: skyblue;
+        grid-area: 4/1/5/5;
+    }
+
+    .twitter {
+        background: brown;
+        grid-area: 4/5/5/9;
+    }
+
+    .favorite {
+        background: olive;
+        grid-area: 4/9/5/13;
+    }
+
+    .footer {
+        background: teal;
+        grid-area: 5/1/6/13;
+    }
+}
